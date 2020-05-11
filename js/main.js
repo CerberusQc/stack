@@ -103,11 +103,8 @@
 
     console.log('%c', devtools);
 
-    if (jeu.termine === true && !open) {
+    if (jeu.termine === true) {
       text = 'FLAG' + this.toString();
-    } else if (open) {
-      console.log('TRICHEUR ! Ferme la console si tu veux' +
-        ' que ton score soit enregistré !');
     }
     return btoa(text);
   };
