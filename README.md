@@ -24,7 +24,7 @@ Bugs Connus :
 	Aucun !
 
 Valeurs ajoutées :
-	Le site est en production : http://www.stacktp3.azurewebsites.net
+	Le site est en production : https://stack.cerberus.cafe
 	A partir de l'étage 10, le jeu devient plus difficile, la tour bouge de haut en bas
 	A chaque 5 étages, le mouvement de la tour devient plus rapide
 	À chaque 20 étages, le background du canevas change pour un gif animé (seulement 2 gifs présentement)
