@@ -1,3 +1,3 @@
-FROM polinux/httpd-php:latest
+FROM php:5.6-apache
 COPY . /var/www/html/
-EXPOSE 80
+RUN chown -R www-data:www-data /var/www/html/
