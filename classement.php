@@ -8,7 +8,7 @@ $secretKey = isset($_POST['secretKey']) ? $_POST['secretKey'] : "";
 
 
 //On récupère le fichier Json qui contient les dix meilleurs joueurs
-$url = 'dixMeilleurs.json';
+$url = './score/top10.json';
 $data = file_get_contents($url);
 $classement = json_decode($data, true);
 
@@ -44,7 +44,7 @@ foreach ($classement as $item) {
         break;
 }
 
-$fp = fopen('dixMeilleurs.json', 'w');
+$fp = fopen($url, 'w');
 fwrite($fp, json_encode($temp));
 fclose($fp);
 echo json_encode($temp);
